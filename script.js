@@ -2,19 +2,29 @@
 
 
 $(document).ready(function() {
-  var divLexie;  
-  $('div').click(function() {
-      
-    if($(this).hasClass("available")) {
-      divLexie=$(this);
-          $( "#dialog-form" ).dialog( "open" );
-      $(this).attr("class", "half-hour taken");
-      $(this).text("Taken");
-    } else if($(this).hasClass("taken")) {
-      $(this).attr("class", "half-hour available");
-      $(this).text("Available");
-    }
-  });
+	var divLexie;
+    var dropDown=$( "#dropdown option:selected" ).val();
+	
+	if(dropDown == "default"){
+		$('#calendar-container').hide();
+	}
+	$(document).on('change','#dropdown',function(e){
+		if($('#dropdown option:selected' ).val() != "default"){
+		$('#calendar-container').show();}
+		else $('#calendar-container').hide();
+	});
+	$('div').click(function() {
+    	
+		if($(this).hasClass("available")) {
+			divLexie=$(this);
+        	$( "#dialog-form" ).dialog( "open" );
+			$(this).attr("class", "half-hour taken");
+			$(this).text("Taken");
+		} else if($(this).hasClass("taken")) {
+			$(this).attr("class", "half-hour available");
+			$(this).text("Available");
+		}
+	});
 
 
 $(function() {
@@ -74,8 +84,8 @@ $(function() {
     }
  
     $( "#dialog-form" ).dialog({
-      dialogClass: "no-close",
       autoOpen: false,
+	  dialogClass: "no-close",
       height: 300,
       width: 400,
       modal: true,
@@ -94,7 +104,7 @@ $(function() {
        //   bValid = bValid && checkRegexp( password, /^([0-9a-zA-Z])+$/, "Password field only allow : a-z 0-9" );
  
           if ( bValid ) {
-      
+			
             $(divLexie).append( "<tr>" +
               "<td>" + name.val() + "</td>" +
               "<td>" + email.val() + "</td>" +
@@ -104,13 +114,13 @@ $(function() {
           }
         },
         Cancel: function() {
-    $(divLexie).attr("class", "half-hour available");
-    $(divLexie).text("Available");
+		$(divLexie).attr("class", "half-hour available");
+		$(divLexie).text("Available");
           $( this ).dialog( "close" );
         }
       },
       close: function() {
-        allFields.val( "" ).removeClass( "ui-state-error" );
+		    allFields.val( "" ).removeClass( "ui-state-error" );
       }
     });
  
