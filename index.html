@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AC Appointment Scheduler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel=StyleSheet href="style.css" type="text/css">
+    <link rel="stylesheet" href="./thing/jquery-ui-1.10.3.custom.css" type="text/css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+
+  <body>
+
+    <div class="container" style="width:400px;">
+      <form class="form-signin">
+        <h3 class="form-signin-heading">All Fields are Required</h3>
+        <input type="text" class="form-control" placeholder="Name" required="" autofocus="">
+        <input type="text" class="form-control" placeholder="Email" required="">
+        <input type="text" class="form-control" placeholder="Reason for visit" required="">
+        <button class="btn btn-md btn-primary" type="submit">Create</button>
+        <button class="btn btn-md btn-primary" type="submit">Cancel</button>
+      </form>
+    </div>
+    
+
+    <div id="heading-container" class="container">
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+          Select a Professor <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Kaplan, Scott</a></li>
+          <li><a href="#">McGeoch, Cathy</a></li>
+          <li><a href="#">McGeoch, Lyle</a></li>
+          <li><a href="#">Rager, John</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group" style="float: right;">
+        <button type="button" class="btn btn-default">&lt;</button>
+        <div class="btn btn-default">Week of ______</div>
+        <button type="button" class="btn btn-default">&gt;</button>
+      </div>
+        <!--
+        <select name="dropdown" id="dropdown">
+          <option value="default">Select a professor</option>
+          <option value="sfkaplan">Scott Kaplan</option>
+          <option value="lam">Lyle McGeoch</option>
+          <option value="jer">John Rager</option>
+        </select>
+      -->
+      
+      <!--
+      <div id="week-select-container">
+        <div class="week-nav" id="prev-week">&lt;</div>
+        <div class="week-nav" id="week-name">Week of Nov 3</div>
+        <div class="week-nav" id="next-week">&gt;</div>
+      </div>
+    -->
+      
+    </div>
+
+    <div id="schedule-table" class="table-responsive container">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th><div class="time-column-name">Time</div></th>
+            <th class="day-column-name">MON</th>
+            <th class="day-column-name">TUE</th>
+            <th class="day-column-name">WED</th>
+            <th class="day-column-name">THU</th>
+            <th class="day-column-name">FRI</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr> <!-- 7am -->
+            <td rowspan="2"><div class="hour">7am</div></td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+          </tr>
+          <tr>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+          </tr>
+          <tr> <!-- 8am -->
+            <td rowspan="2"><div class="hour">8am</div></td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+          </tr>
+          <tr>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+          </tr>
+          <tr> <!-- 9am -->
+            <td rowspan="2"><div class="hour">9am</div></td>
+            <td><div class="half-hour">Available</div></td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+          </tr>
+          <tr> 
+            <td><div class="half-hour">Available</div></td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+          </tr>
+          <tr> <!-- 10am -->
+            <td rowspan="2"><div class="hour">10am</div></td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+          </tr>
+          <tr> 
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+          </tr>
+          <tr> <!-- 11am -->
+            <td rowspan="2"><div class="hour">11am</div></td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+          </tr>
+          <tr>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+          </tr>
+          <tr> <!-- 12pm -->
+            <td rowspan="2"><div class="hour">12pm</div></td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+            <td><div class="half-hour"></div>--</td>
+          </tr>
+          <tr> 
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+          </tr>
+          <tr> <!-- 1pm -->
+            <td rowspan="2"><div class="hour">1pm</div></td>
+            <td><div class="half-hour success">Available</div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+          </tr>
+          <tr>
+            <td><div class="half-hour success">Available</div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+          </tr>
+          <tr> <!-- 2pm -->
+            <td rowspan="2"><div class="hour">2pm</div></td>
+            <td><div class="half-hour success">Available</div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+          </tr>
+          <tr>
+            <td class="success"><div class="half-hour success">Available</div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+          </tr>
+          <tr> <!-- 3pm -->
+            <td rowspan="2"><div class="hour">3pm</div></td>
+            <td><div class="half-hour success">Available</div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+          </tr>
+          <tr>
+            <td><div class="half-hour success">Available</div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div>Available</td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+          </tr>
+          <tr> <!-- 4pm -->
+            <td rowspan="2"><div class="hour">4pm</div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+          </tr>
+          <tr>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+          </tr>
+          <tr> <!-- 5pm -->
+            <td rowspan="2"><div class="hour">5pm</div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+          </tr>
+          <tr>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+            <td><div class="half-hour"></div></td>
+          </tr>
+          
+        </tbody>
+        
+      </table>
+    </div>
+
+    
+  </body>
+</html>
