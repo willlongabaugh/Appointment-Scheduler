@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel=StyleSheet href="style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="./thing/jquery-ui-1.10.3.custom.css" type="text/css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -19,50 +19,102 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!--main js code-->
     <script src="js/script.js"></script>
+    <script type='text/javascript' src='https://cdn.firebase.com/v0/firebase.js'></script>
+    
+    <script src="assets/js/jquery.validate.min.js"></script>
+
+
   </head>
 
   <body>
-
-    <div class="container" style="width:400px;">
-      <form class="form-signin">
-        <h3 class="form-signin-heading">All Fields are Required</h3>
-        <input type="text" class="form-control" placeholder="Name" required="" autofocus="">
-        <input type="text" class="form-control" placeholder="Email" required="">
-        <input type="text" class="form-control" placeholder="Reason for visit" required="">
-        <button class="btn btn-md btn-primary" type="submit">Create</button>
-        <button class="btn btn-md btn-primary" type="submit">Cancel</button>
+    <div class="container modal" id="submit-form-container">
+      <form action="" id="submit-form" class="">
+        <fieldset>
+          <h3 class="form-signin-heading">Create an appointment</h3>
+          <h5 class="form-signin-heading">All Fields are Required</h5>
+          <div class="control-group">
+            <div class="controls">
+              <input type="text" class="form-control" name="name" id="name" placeholder="Name" autofocus>
+              <label></label>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="controls">
+              <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+              <label></label>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="controls">
+              <input type="text" class="form-control" name="reason" id="reason" placeholder="Reason for visit">
+              <label></label>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary btn-large" id="submit-button">Submit</button>
+            <button type="reset" class="btn" id="cancel-button">Cancel</button>
+          </div>
+        </fieldset>
       </form>
     </div>
-    
+
+    <!--
+    <div class="container modal" id="submit-form">
+      <form role="form" class="form-signin">
+        <h3 class="form-signin-heading">Create an appointment</h3>
+        <h4 class="form-signin-heading">All Fields are Required</h4>
+        <input type="text" class="form-control" id="name" placeholder="Name" required autofocus>
+        <br>
+        <input type="email" class="form-control" id="email" placeholder="Email" required>
+        <br>
+        <input type="text" class="form-control" id="reason" placeholder="Reason for visit" required>
+        <br>
+        <button class="btn btn-md btn-primary" type="submit" id="submit-button" >Submit</button>
+        <button class="btn btn-md btn-primary" type="button" id="cancel-button" >Cancel</button>
+      </form>
+    </div>
+    -->
+
+
+    <div class="container"><h3>Select a professor from the dropdown menu to begin</h3></div>
 
     <div id="heading-container" class="container">
 
+      <!--
       <div class="btn-group">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
           Select a Professor <span class="caret"></span>
         </button>
         <ul class="dropdown-menu" role="menu">
-          <li><a href="#">Kaplan, Scott</a></li>
-          <li><a href="#">McGeoch, Cathy</a></li>
-          <li><a href="#">McGeoch, Lyle</a></li>
-          <li><a href="#">Rager, John</a></li>
+          <li value="sfkaplan"><a href="#">Kaplan, Scott</a></li>
+          <li value="ccmcgeoch"><a href="#">McGeoch, Cathy</a></li>
+          <li value="lamcgeoch"><a href="#">McGeoch, Lyle</a></li>
+          <li value="jerager"><a href="#">Rager, John</a></li>
         </ul>
       </div>
+    -->
 
+      <!-- PROFESSOR SELECT -->
+      <select id="dropdown" class="form-control" style="width: 200px; float: left;">
+        <option value="default">Select a professor</option>
+        <option value="sfkaplan">Kaplan, Scott</option>
+        <option value="ccmcgeoch">McGeoch, Catherine</option>
+        <option value="lamcgeoch">McGeoch, Lyle</option>
+        <option value="jerager">Rager, John</option>
+      </select>
+
+      <!-- WEEK SELECT -->
       <div class="btn-group" style="float: right;">
         <button type="button" class="btn btn-default">&lt;</button>
         <div class="btn btn-default">Week of ______</div>
         <button type="button" class="btn btn-default">&gt;</button>
       </div>
-        <!--
-        <select name="dropdown" id="dropdown">
-          <option value="default">Select a professor</option>
-          <option value="sfkaplan">Scott Kaplan</option>
-          <option value="lam">Lyle McGeoch</option>
-          <option value="jer">John Rager</option>
-        </select>
-      -->
+        
+      
+      
       
       <!--
       <div id="week-select-container">
@@ -78,7 +130,7 @@
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th><div class="time-column-name">Time</div></th>
+            <th><div class="">Time</div></th>
             <th class="day-column-name">MON</th>
             <th class="day-column-name">TUE</th>
             <th class="day-column-name">WED</th>
@@ -89,176 +141,172 @@
 
         <tbody>
           <tr> <!-- 7am -->
-            <td rowspan="2"><div class="hour">7am</div></td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
+            <td rowspan="2" class="hour">7am</td>
+            <td class="half-hour" id="monday/0700"></td>
+            <td class="half-hour" id="tuesday/0700"></td>
+            <td class="half-hour" id="wednesday/0700"></td>
+            <td class="half-hour" id="thursday/0700"></td>
+            <td class="half-hour" id="friday/0700"></td>
           </tr>
           <tr>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
+            <td class="half-hour" id="monday/0730"></td>
+            <td class="half-hour" id="tuesday/0730"></td>
+            <td class="half-hour" id="wednesday/0730"></td>
+            <td class="half-hour" id="thursday/0730"></td>
+            <td class="half-hour" id="friday/0730"></td>
           </tr>
           <tr> <!-- 8am -->
-            <td rowspan="2"><div class="hour">8am</div></td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
+            <td rowspan="2" class="hour">8am</td>
+            <td class="half-hour" id="monday/0800"></td>
+            <td class="half-hour" id="tuesday/0800"></td>
+            <td class="half-hour" id="wednesday/0800"></td>
+            <td class="half-hour" id="thursday/0800"></td>
+            <td class="half-hour" id="friday/0800"></td>
           </tr>
           <tr>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
+            <td class="half-hour" id="monday/0830"></td>
+            <td class="half-hour" id="tuesday/0830"></td>
+            <td class="half-hour" id="wednesday/0830"></td>
+            <td class="half-hour" id="thursday/0830"></td>
+            <td class="half-hour" id="friday/0830"></td>
           </tr>
           <tr> <!-- 9am -->
-            <td rowspan="2"><div class="hour">9am</div></td>
-            <td><div class="half-hour">Available</div></td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
+            <td rowspan="2" class="hour">9am</td>
+            <td class="half-hour" id="monday/0900"></td>
+            <td class="half-hour" id="tuesday/0900"></td>
+            <td class="half-hour" id="wednesday/0900"></td>
+            <td class="half-hour" id="thursday/0900"></td>
+            <td class="half-hour" id="friday/0900"></td>
           </tr>
           <tr> 
-            <td><div class="half-hour">Available</div></td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
+            <td class="half-hour" id="monday/0930"></td>
+            <td class="half-hour" id="tuesday/0930"></td>
+            <td class="half-hour" id="wednesday/0930"></td>
+            <td class="half-hour" id="thursday/0930"></td>
+            <td class="half-hour" id="friday/0930"></td>
           </tr>
           <tr> <!-- 10am -->
-            <td rowspan="2"><div class="hour">10am</div></td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
+            <td rowspan="2" class="hour">10am</td>
+            <td class="half-hour" id="monday/1000"></td>
+            <td class="half-hour" id="tuesday/1000"></td>
+            <td class="half-hour" id="wednesday/1000"></td>
+            <td class="half-hour" id="thursday/1000"></td>
+            <td class="half-hour" id="friday/1000"></td>
           </tr>
           <tr> 
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
+            <td class="half-hour" id="monday/1030"></td>
+            <td class="half-hour" id="tuesday/1030"></td>
+            <td class="half-hour" id="wednesday/1030"></td>
+            <td class="half-hour" id="thursday/1030"></td>
+            <td class="half-hour" id="friday/1030"></td>
           </tr>
           <tr> <!-- 11am -->
-            <td rowspan="2"><div class="hour">11am</div></td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
+            <td rowspan="2" class="hour">11am</td>
+            <td class="half-hour" id="monday/1100"></td>
+            <td class="half-hour" id="tuesday/1100"></td>
+            <td class="half-hour" id="wednesday/1100"></td>
+            <td class="half-hour" id="thursday/1100"></td>
+            <td class="half-hour" id="friday/1100"></td>
           </tr>
           <tr>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
+            <td class="half-hour" id="monday/1130"></td>
+            <td class="half-hour" id="tuesday/1130"></td>
+            <td class="half-hour" id="wednesday/1130"></td>
+            <td class="half-hour" id="thursday/1130"></td>
+            <td class="half-hour" id="friday/1130"></td>
           </tr>
           <tr> <!-- 12pm -->
-            <td rowspan="2"><div class="hour">12pm</div></td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
-            <td><div class="half-hour"></div>--</td>
+            <td rowspan="2" class="hour">12pm</td>
+            <td class="half-hour" id="monday/1200"></td>
+            <td class="half-hour" id="tuesday/1200"></td>
+            <td class="half-hour" id="wednesday/1200"></td>
+            <td class="half-hour" id="thursday/1200"></td>
+            <td class="half-hour" id="friday/1200"></td>
           </tr>
           <tr> 
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
+            <td class="half-hour" id="monday/1230"></td>
+            <td class="half-hour" id="tuesday/1230"></td>
+            <td class="half-hour" id="wednesday/1230"></td>
+            <td class="half-hour" id="thursday/1230"></td>
+            <td class="half-hour" id="friday/1230"></td>
           </tr>
           <tr> <!-- 1pm -->
-            <td rowspan="2"><div class="hour">1pm</div></td>
-            <td><div class="half-hour success">Available</div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
+            <td rowspan="2" class="hour">1pm</td>
+            <td class="half-hour" id="monday/1300"></td>
+            <td class="half-hour" id="tuesday/1300"></td>
+            <td class="half-hour" id="wednesday/1300"></td>
+            <td class="half-hour" id="thursday/1300"></td>
+            <td class="half-hour" id="friday/1300"></td>
           </tr>
           <tr>
-            <td><div class="half-hour success">Available</div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
+            <td class="half-hour" id="monday/1330"></td>
+            <td class="half-hour" id="tuesday/1330"></td>
+            <td class="half-hour" id="wednesday/1330"></td>
+            <td class="half-hour" id="thursday/1330"></td>
+            <td class="half-hour" id="friday/1330"></td>
           </tr>
           <tr> <!-- 2pm -->
-            <td rowspan="2"><div class="hour">2pm</div></td>
-            <td><div class="half-hour success">Available</div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
+            <td rowspan="2" class="hour">2pm</td>
+            <td class="half-hour" id="monday/1400"></td>
+            <td class="half-hour" id="tuesday/1400"></td>
+            <td class="half-hour" id="wednesday/1400"></td>
+            <td class="half-hour" id="thursday/1400"></td>
+            <td class="half-hour" id="friday/1400"></td>
           </tr>
           <tr>
-            <td class="success"><div class="half-hour success">Available</div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
+            <td class="half-hour" id="monday/1430"></td>
+            <td class="half-hour" id="tuesday/1430"></td>
+            <td class="half-hour" id="wednesday/1430"></td>
+            <td class="half-hour" id="thursday/1430"></td>
+            <td class="half-hour" id="friday/1430"></td>
           </tr>
           <tr> <!-- 3pm -->
-            <td rowspan="2"><div class="hour">3pm</div></td>
-            <td><div class="half-hour success">Available</div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
+            <td rowspan="2" class="hour">3pm</td>
+            <td class="half-hour" id="monday/1500"></td>
+            <td class="half-hour" id="tuesday/1500"></td>
+            <td class="half-hour" id="wednesday/1500"></td>
+            <td class="half-hour" id="thursday/1500"></td>
+            <td class="half-hour" id="friday/1500"></td>
           </tr>
           <tr>
-            <td><div class="half-hour success">Available</div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div>Available</td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
+            <td class="half-hour" id="monday/1530"></td>
+            <td class="half-hour" id="tuesday/1530"></td>
+            <td class="half-hour" id="wednesday/1530"></td>
+            <td class="half-hour" id="thursday/1530"></td>
+            <td class="half-hour" id="friday/1530"></td>
           </tr>
           <tr> <!-- 4pm -->
-            <td rowspan="2"><div class="hour">4pm</div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
+            <td rowspan="2" class="hour">4pm</td>
+            <td class="half-hour" id="monday/1600"></td>
+            <td class="half-hour" id="tuesday/1600"></td>
+            <td class="half-hour" id="wednesday/1600"></td>
+            <td class="half-hour" id="thursday/1600"></td>
+            <td class="half-hour" id="friday/1600"></td>
           </tr>
           <tr>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
+            <td class="half-hour" id="monday/1630"></td>
+            <td class="half-hour" id="tuesday/1630"></td>
+            <td class="half-hour" id="wednesday/1630"></td>
+            <td class="half-hour" id="thursday/1630"></td>
+            <td class="half-hour" id="friday/1630"></td>
           </tr>
           <tr> <!-- 5pm -->
-            <td rowspan="2"><div class="hour">5pm</div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
+            <td rowspan="2" class="hour">5pm</td>
+            <td class="half-hour" id="monday/1700"></td>
+            <td class="half-hour" id="tuesday/1700"></td>
+            <td class="half-hour" id="wednesday/1700"></td>
+            <td class="half-hour" id="thursday/1700"></td>
+            <td class="half-hour" id="friday/1700"></td>
           </tr>
           <tr>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
-            <td><div class="half-hour"></div></td>
+            <td class="half-hour" id="monday/1730"></td>
+            <td class="half-hour" id="tuesday/1730"></td>
+            <td class="half-hour" id="wednesday/1730"></td>
+            <td class="half-hour" id="thursday/1730"></td>
+            <td class="half-hour" id="friday/1730"></td>
           </tr>
-          
         </tbody>
-        
       </table>
     </div>
-
-    
   </body>
 </html>

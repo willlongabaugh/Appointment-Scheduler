@@ -1,0 +1,2706 @@
+{
+  "professors" : {
+    "jerager" : {
+      "wednesday" : {
+        "1630" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1000" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1300" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1030" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1600" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1500" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1230" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1530" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0930" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1200" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0900" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1430" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1400" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1130" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0830" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1100" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0800" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1330" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        }
+      },
+      "tuesday" : {
+        "1630" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1000" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1300" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1030" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1600" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1500" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1230" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1530" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0930" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1200" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0900" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1430" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1400" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1130" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0830" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1100" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0800" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1330" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        }
+      },
+      "monday" : {
+        "1630" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1000" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1300" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1030" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1600" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1500" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1230" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1530" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0930" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1200" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0900" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1430" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1400" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1130" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0830" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1100" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0800" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1330" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        }
+      },
+      "name" : "John Rager",
+      "friday" : {
+        "1630" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1000" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1300" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1030" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1600" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1500" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1230" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1530" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0930" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1200" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0900" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1430" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1400" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1130" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0830" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1100" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0800" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1330" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        }
+      },
+      "thursday" : {
+        "1630" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1000" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1300" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1030" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1600" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1500" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1230" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1530" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0930" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1200" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0900" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1430" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1400" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1130" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0830" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1100" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0800" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1330" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        }
+      }
+    },
+
+
+
+
+    "sfkaplan" : {
+      "wednesday" : {
+        "1630" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1000" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1300" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1030" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1600" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1500" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1230" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1530" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0930" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1200" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0900" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1430" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1400" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1130" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0830" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1100" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0800" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1330" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        }
+      },
+      "tuesday" : {
+        "1630" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1000" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1300" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1030" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1600" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1500" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1230" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1530" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0930" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1200" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0900" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1430" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1400" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1130" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0830" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1100" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0800" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1330" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        }
+      },
+      "monday" : {
+        "1630" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1000" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1300" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1030" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1600" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1500" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1230" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1530" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0930" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1200" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0900" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1430" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1400" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1130" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0830" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1100" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0800" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1330" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        }
+      },
+      "name" : "Scott Kaplan",
+      "friday" : {
+        "1630" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1000" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1300" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1030" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1600" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1500" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1230" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1530" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0930" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1200" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0900" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1430" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1400" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1130" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0830" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1100" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0800" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1330" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        }
+      },
+      "thursday" : {
+        "1630" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1000" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1300" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1030" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1600" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1500" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1230" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1530" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0930" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1200" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0900" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1430" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1400" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1130" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0830" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1100" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0800" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1330" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        }
+      }
+    },
+
+
+
+    "ccmcgeoch" : {
+      "wednesday" : {
+        "1630" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1000" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1300" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1030" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1600" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1500" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1230" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1530" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0930" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1200" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0900" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1430" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1400" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1130" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0830" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1100" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0800" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1330" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        }
+      },
+      "tuesday" : {
+        "1630" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1000" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1300" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1030" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1600" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1500" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1230" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1530" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0930" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1200" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0900" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1430" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1400" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1130" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0830" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1100" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0800" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1330" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        }
+      },
+      "monday" : {
+        "1630" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1000" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1300" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1030" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1600" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1500" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1230" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1530" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0930" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1200" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0900" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1430" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1400" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1130" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0830" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1100" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0800" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1330" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        }
+      },
+      "name" : "Catherine McGeoch",
+      "friday" : {
+        "1630" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1000" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1300" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1030" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1600" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1500" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1230" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1530" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0930" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1200" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0900" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1430" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1400" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1130" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0830" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1100" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0800" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1330" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        }
+      },
+      "thursday" : {
+        "1630" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1000" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1300" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1030" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1600" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1500" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1230" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1530" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0930" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1200" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0900" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1430" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1400" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1130" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0830" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1100" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0800" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1330" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        }
+      }
+    },
+    "lamcgeoch" : {
+      "wednesday" : {
+        "1630" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1000" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1300" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1030" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1600" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1500" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1230" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1530" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0930" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1200" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0900" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1430" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1400" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1130" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0830" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1100" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0800" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1330" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        }
+      },
+      "tuesday" : {
+        "1630" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1000" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1300" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1030" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1600" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1500" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1230" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1530" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0930" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1200" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0900" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1430" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1400" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1130" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0830" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1100" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0800" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1330" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        }
+      },
+      "monday" : {
+        "1630" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1000" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1300" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1030" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1600" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1500" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1230" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1530" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0930" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1200" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0900" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1430" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1400" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1130" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0830" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1100" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0800" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1330" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        }
+      },
+
+
+
+      "name" : "Lyle McGeoch",
+      "friday" : {
+        "1630" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1000" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1300" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1030" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1600" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1500" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1230" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1530" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0930" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1200" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0900" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1430" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1400" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1130" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0830" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1100" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0800" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1330" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        }
+      },
+      "thursday" : {
+        "1630" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1000" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1300" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1030" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1600" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1500" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1230" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1530" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0930" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1200" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0900" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1430" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1730" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1400" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1130" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1700" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0830" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1100" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "0800" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        },
+        "1330" : {
+          "name" : "--",
+          "email" : "--",
+          "reason" : "--",
+          "available" : "  "
+        }
+      }
+    }
+  }
+}

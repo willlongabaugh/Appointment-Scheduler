@@ -6,42 +6,17 @@
   body{
   	font-size: 14px;
   }
-
-  label {
-    visibility: hidden;
-    
-  }
-  label.valid {
-    visibility: visible;
-    width: 24px;
-    background: url(../assets/img/valid.png) center center no-repeat;
-    display: inline-block;
-    text-indent: -9999px;
-  }
-  
-  label.error {
-    visibility: visible;
-    font-weight: bold;
-    color: red;
-    padding: 0px 8px;
-    /*margin-top: 2px;*/
-  }
-
-  #submit-form-container {
-    /*display: none;*/
-    width: 400px;
-    height: 300px;
-    background-color: white;
-    border: 1px solid gray;
-    border-radius: 4px;
-  }
   select {
   	width: 300px;
   	height:40px;
   	padding: 10px;
   	border-style: none;
 
-
+  	z-index: 1;
+	-moz-box-shadow:    0px 2px 2px 0px #bdbdbd;
+  	-webkit-box-shadow: 0px 2px 2px 0px #bdbdbd;
+  	box-shadow:         0px 2px 2px 0px #bdbdbd;
+  	position:relative;
   }
 
   table {
@@ -53,7 +28,11 @@
   	border-radius: 2px;
   	padding: 0px;
 
-
+  	z-index: 1;
+	-moz-box-shadow:    0px 2px 2px 0px #bdbdbd;
+  	-webkit-box-shadow: 0px 2px 2px 0px #bdbdbd;
+  	box-shadow:         0px 2px 2px 0px #bdbdbd;
+  	position:relative;
   }
 
   th {
@@ -61,11 +40,16 @@
   }
   td {
   	border: solid 1px #f2f2f2;
-    height: 30px;
   	padding: 0px;
   }
 
- .danger:hover, .warning:hover, .success:hover {
+ .available {
+ 	background-color: #cccccc;
+ }
+ .taken {
+ 	background-color: #944D94;
+ }
+ .available:hover, .taken:hover {
  	cursor: pointer;
  }
 
@@ -94,7 +78,11 @@
   	text-align: center;
 
   	padding-top: 0px;
-
+  	z-index: 1;
+	-moz-box-shadow:    0px 2px 2px 0px #bdbdbd;
+  	-webkit-box-shadow: 0px 2px 2px 0px #bdbdbd;
+  	box-shadow:         0px 2px 2px 0px #bdbdbd;
+  	position:relative;
   }
   #week-name {
   	height:40px;
@@ -112,6 +100,11 @@
   	border-bottom-left-radius: 2px;
   	font-size: 12px;
 
+  	z-index: 1;
+	-moz-box-shadow:    0px 2px 2px 0px #bdbdbd;
+  	-webkit-box-shadow: 0px 2px 2px 0px #bdbdbd;
+  	box-shadow:         0px 2px 2px 0px #bdbdbd;
+  	position:relative;
   }
   #next-week {
   	width: 40px;
@@ -122,6 +115,11 @@
   	border-bottom-right-radius: 2px;
   	font-size: 12px;
 
+  	z-index: 1;
+	-moz-box-shadow:    0px 2px 2px 0px #bdbdbd;
+  	-webkit-box-shadow: 0px 2px 2px 0px #bdbdbd;
+  	box-shadow:         0px 2px 2px 0px #bdbdbd;
+  	position:relative;
   }
 
   #calendar-container {
@@ -141,6 +139,12 @@
   	border-bottom-left-radius: 2px;
   	float:left;
   	line-height: 30px;
+
+  	z-index: 1;
+	-moz-box-shadow:    0px 2px 2px 0px #bdbdbd;
+  	-webkit-box-shadow: 0px 2px 2px 0px #bdbdbd;
+  	box-shadow:         0px 2px 2px 0px #bdbdbd;
+  	position:relative;
   }
   .hour {
   	color: black;
@@ -161,12 +165,17 @@
   	line-height: 30px;
   	border-width: 0;
 
+  	z-index: 1;
+	-moz-box-shadow:    0px 2px 2px 0px #bdbdbd;
+  	-webkit-box-shadow: 0px 2px 2px 0px #bdbdbd;
+  	box-shadow:         0px 2px 2px 0px #bdbdbd;
+  	position:relative;
   }
   .half-hour {
   	color: black;
   	font-size: 12px;
-  	/*text-align: center;*/
-  	/*width: 100%;*/
+  	text-align: center;
+  	width: 100%;
   	height: 30px;
 
   	/*border: solid 1px #bdbdbd;*/
@@ -175,8 +184,8 @@
   }
   
   .time-column-name {
-  	/*background-color: #944D94;
-  	color: white;*/
+  	background-color: #944D94;
+  	color: white;
   	font-size:12px;
   	text-align: center;
   	width: 60px;
@@ -184,13 +193,13 @@
   	
   }
   .day-column-name {
-  	/*background-color: #944D94;
-  	color: white;*/
+  	background-color: #944D94;
+  	color: white;
   	font-size:12px;
-  	/*text-align: center;*/
+  	text-align: center;
   	width: 180px;
   	height:30px;
-	  border-right: 1px solid white;
+	border-right: 1px solid white;
   	
   }
   

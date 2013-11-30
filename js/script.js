@@ -1,32 +1,217 @@
-
-
-
 $(document).ready(function() {
-	var divLexie;
-  var dropDown=$( "#dropdown option:selected" ).val();
 
-  if(dropDown == "default"){
-    $('#calendar-container').hide();
+  $('#submit-form').validate({
+    rules: {
+      name: {
+        minlength: 2,
+        required: true
+      },
+      email: {
+        required: true,
+        email: true
+      },
+      subject: {
+        minlength: 2,
+        required: true
+      },
+      message: {
+        minlength: 2,
+        required: true
+      }
+    },
+    highlight: function(element) {
+      $(element).closest('.control-group').removeClass('success').addClass('danger');
+    },
+    success: function(element) {
+      element
+      .text('OK!').addClass('valid')
+      .closest('.control-group').removeClass('danger').addClass('success');
+    }
+  });
+
+  // PROFESSOR SELECTION///////////////////////////////
+  var professor;
+  professor = $("#dropdown option:selected").val();
+
+  //clear calendar values, only clears on page open, not on switch
+  if(professor == "default"){
+    $(".half-hour").empty();
+    $(".half-hour").removeClass("success");
+    $(".half-hour").removeClass("danger");
   }
-  $(document).on('change','#dropdown',function(e){
-    if($('#dropdown option:selected' ).val() != "default"){
-      $('#calendar-container').show();}
-      else $('#calendar-container').hide();
+
+  //$(document).on('change','#dropdown',function(e){
+  $("select").change(function() {
+    if($('#dropdown option:selected').val() != "default"){
+      //clear table first
+      $(".half-hour").empty();
+      $(".half-hour").removeClass("success");
+      $(".half-hour").removeClass("danger");
+      //RETRIEVE FIREBASE DATA HERE
+      professor = $("#dropdown option:selected").val();       
+      fillDay(professor,"monday");
+      fillDay(professor,"tuesday");
+      fillDay(professor,"wednesday");
+      fillDay(professor,"thursday");
+      fillDay(professor,"friday");
+
+    }
+  });
+  //END PROFESSOR SELECTION//////////////////////////////////////////////////////
+
+  //retrive data from Firebase for a specific day
+  function fillDay(professor, day) {
+    var dayRef = new Firebase('https://cs390-appt-scheduler.firebaseio.com/professors/'+professor+'/'+day);
+    var dataRef;
+    var nameRef;
+    var timeSlotClass;
+    var iRef;
+    var state;
+
+    //fill in hourly slots
+    var i = 700;
+    while(i <= 1730) {
+    //for (var i = 700; i <= 1700; ) {
+      if(i < 1000) {
+        timeSlotClass = '#'+day+'\\/0'+i;
+        iRef = '0'+ i;
+      } else {
+        timeSlotClass = '#'+day+'\\/'+i;
+        iRef = i;
+      }
+      //dataRef = new Firebase('https://cs390-appt-scheduler.firebaseio.com/professors/'+professor+'/'+day+'/'+iRef+'/available');
+      dataRef = dayRef.child(iRef+'/available');
+      dataRef.on('value', function(snapshot) {
+        state = snapshot.val();
+        if(state == 'Available') {
+          $(timeSlotClass).addClass('success');
+          $(timeSlotClass).text(state);
+        } else if(state == 'Taken') {
+          nameRef = dayRef.child(iRef+'/name');
+          nameRef.on('value', function(param) {
+            $(timeSlotClass).addClass('danger');
+            $(timeSlotClass).text(param.val());
+          });
+          
+        }
+      });
+
+      //increment the time
+      if(i%100 == 30) { 
+        i += 70;
+      } else if(i%100 == 0) {
+        i+= 30;
+      }
+
+    };
+
+    /*
+    //fill in half-hour slots
+    for (var i = 730; i <= 1730; i=i+100) {
+      if(i < 1000) {
+        timeSlotClass = '#'+day+'\\/0'+i;
+        iRef = '0'+ i;
+      } else {
+        timeSlotClass = '#'+day+'\\/'+i;
+        iRef = i;
+      }
+      dataRef = new Firebase('https://cs390-appt-scheduler.firebaseio.com/professors/'+professor+'/'+day+'/'+iRef+'/available');
+      
+      dataRef.on('value', function(snapshot) {
+        state = snapshot.val();
+        if(state == 'Available') {
+          $(timeSlotClass).addClass('success');
+          $(timeSlotClass).text(state);
+        } else if(state == 'Taken') {
+          nameRef = dayRef.child(iRef+'/name');
+          nameRef.on('value', function(param) {
+            $(timeSlotClass).addClass('danger');
+            $(timeSlotClass).text(param.val());
+          });
+          
+        }
+      });
+      
+    };
+    */
+
+  }
+
+
+  //Modal form code///////////////////////////////////////////
+  var currentTime;
+  var name;
+  var email;
+  var reason;
+  var id;
+  var timeRef;
+
+  $('.half-hour').click(function() {
+    currentTime = $(this);
+    id = currentTime.attr('id');
+    timeRef = new Firebase('https://cs390-appt-scheduler.firebaseio.com/professors/'+professor+'/'+id);
+
+    //clicking an available slot///////////////
+    if(currentTime.hasClass('success')) {
+      $("#submit-form-container").modal('show');
+    }
+    
+    //cancelling an appointment////////////////
+    else if(currentTime.hasClass('danger')) {
+      $(currentTime).removeClass('danger');
+      $(currentTime).addClass('success');
+      $(currentTime).text('Available');
+      //SEND EMAIL TO PROFESSOR?
+
+      //UPDATE FIREBASE DATA
+      timeRef.child('name').set('--');
+      timeRef.child('email').set('--');
+      timeRef.child('reason').set('--');
+      timeRef.child('available').set('Available');
+      
+    }
+
+    //Form buttons/////////////////////
+    $('#submit-button').click(function() {
+      
+      //Submitting an appointment request/////////
+      if(currentTime.hasClass('success')) {
+        
+        name   = $('#name').val();
+        email  = $('#email').val();
+        reason = $('#reason').val();
+        id     = currentTime.attr('id');
+        //alert('id is ' + id);
+
+        $(currentTime).addClass('danger');
+        $(currentTime).removeClass('success');
+        $(currentTime).text(name);
+        $('#submit-form-container').modal('hide');
+        $('form')[0].reset();
+        //SEND EMAIL TO PROFESSOR
+
+        //UPDATE FIREBASE DATA
+        timeRef.child('name').set(name);
+        timeRef.child('email').set(email);
+        timeRef.child('reason').set(reason);
+        timeRef.child('available').set('Taken');
+      }  
     });
-  $('div').click(function() {
 
-    if($(this).hasClass("available")) {
-     divLexie=$(this);
-     $( "#dialog-form" ).dialog( "open" );
-     $(this).attr("class", "half-hour taken");
-     $(this).text("Taken");
-   } else if($(this).hasClass("taken")) {
-     $(this).attr("class", "half-hour available");
-     $(this).text("Available");
-   }
- });
+    //Hitting cancel button in the form////////
+    $('#cancel-button').click(function() {
+      $('#submit-form-container').modal('hide');
+    });
+  });
+
+  //End modal code////////////////////////////////////////////////
 
 
+
+
+
+//OLD STUFF///////////////////////////////////////////////////////
+/*
   $(function() {
     var name = $( "#name" ),
     email = $( "#email" ),
@@ -129,4 +314,5 @@ $(document).ready(function() {
 
 
 
+*/
 });
