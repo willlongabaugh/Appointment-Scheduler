@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AC Appointment Scheduler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="./thing/jquery-ui-1.10.3.custom.css" type="text/css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--main js code-->
+    <script src="js/profScript.js"></script>
+    <script type='text/javascript' src='https://cdn.firebase.com/v0/firebase.js'></script>
+    
+    <script src="assets/js/jquery.validate.min.js"></script>
+
+
+  </head>
+
+  <body>
+  
+
+ 
+<h3>Meeting Scheduler</h3>
+
+    <div class="container"><h3>Click on half-an hour slots to mark your availability</h3></div>
+
+    
+
+    <div id="schedule-table" class="table-responsive container">
+      <table align="center" class="table table-bordered">
+      
+        <thead>
+        
+          <tr>
+            <th><div class="">Time</div></th>
+            <th class="day-column-name">MON</th>
+            <th class="day-column-name">TUE</th>
+            <th class="day-column-name">WED</th>
+            <th class="day-column-name">THU</th>
+            <th class="day-column-name">FRI</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr> <!-- 7am -->
+            <td rowspan="2" class="hour">7am</td>
+            <td class="half-hour-prof" id="monday/0700"></td>
+            <td class="half-hour-prof" id="tuesday/0700"></td>
+            <td class="half-hour-prof" id="wednesday/0700"></td>
+            <td class="half-hour-prof" id="thursday/0700"></td>
+            <td class="half-hour-prof" id="friday/0700"></td>
+          </tr>
+          <tr>
+            <td class="half-hour-prof" id="monday/0730"></td>
+            <td class="half-hour-prof" id="tuesday/0730"></td>
+            <td class="half-hour-prof" id="wednesday/0730"></td>
+            <td class="half-hour-prof" id="thursday/0730"></td>
+            <td class="half-hour-prof" id="friday/0730"></td>
+          </tr>
+          <tr> <!-- 8am -->
+            <td rowspan="2" class="hour">8am</td>
+            <td class="half-hour-prof" id="monday/0800"></td>
+            <td class="half-hour-prof" id="tuesday/0800"></td>
+            <td class="half-hour-prof" id="wednesday/0800"></td>
+            <td class="half-hour-prof" id="thursday/0800"></td>
+            <td class="half-hour-prof" id="friday/0800"></td>
+          </tr>
+          <tr>
+            <td class="half-hour-prof" id="monday/0830"></td>
+            <td class="half-hour-prof" id="tuesday/0830"></td>
+            <td class="half-hour-prof" id="wednesday/0830"></td>
+            <td class="half-hour-prof" id="thursday/0830"></td>
+            <td class="half-hour-prof" id="friday/0830"></td>
+          </tr>
+          <tr> <!-- 9am -->
+            <td rowspan="2" class="hour">9am</td>
+            <td class="half-hour-prof" id="monday/0900"></td>
+            <td class="half-hour-prof" id="tuesday/0900"></td>
+            <td class="half-hour-prof" id="wednesday/0900"></td>
+            <td class="half-hour-prof" id="thursday/0900"></td>
+            <td class="half-hour-prof" id="friday/0900"></td>
+          </tr>
+          <tr> 
+            <td class="half-hour-prof" id="monday/0930"></td>
+            <td class="half-hour-prof" id="tuesday/0930"></td>
+            <td class="half-hour-prof" id="wednesday/0930"></td>
+            <td class="half-hour-prof" id="thursday/0930"></td>
+            <td class="half-hour-prof" id="friday/0930"></td>
+          </tr>
+          <tr> <!-- 10am -->
+            <td rowspan="2" class="hour">10am</td>
+            <td class="half-hour-prof" id="monday/1000"></td>
+            <td class="half-hour-prof" id="tuesday/1000"></td>
+            <td class="half-hour-prof" id="wednesday/1000"></td>
+            <td class="half-hour-prof" id="thursday/1000"></td>
+            <td class="half-hour-prof" id="friday/1000"></td>
+          </tr>
+          <tr> 
+            <td class="half-hour-prof" id="monday/1030"></td>
+            <td class="half-hour-prof" id="tuesday/1030"></td>
+            <td class="half-hour-prof" id="wednesday/1030"></td>
+            <td class="half-hour-prof" id="thursday/1030"></td>
+            <td class="half-hour-prof" id="friday/1030"></td>
+          </tr>
+          <tr> <!-- 11am -->
+            <td rowspan="2" class="hour">11am</td>
+            <td class="half-hour-prof" id="monday/1100"></td>
+            <td class="half-hour-prof" id="tuesday/1100"></td>
+            <td class="half-hour-prof" id="wednesday/1100"></td>
+            <td class="half-hour-prof" id="thursday/1100"></td>
+            <td class="half-hour-prof" id="friday/1100"></td>
+          </tr>
+          <tr>
+            <td class="half-hour-prof" id="monday/1130"></td>
+            <td class="half-hour-prof" id="tuesday/1130"></td>
+            <td class="half-hour-prof" id="wednesday/1130"></td>
+            <td class="half-hour-prof" id="thursday/1130"></td>
+            <td class="half-hour-prof" id="friday/1130"></td>
+          </tr>
+          <tr> <!-- 12pm -->
+            <td rowspan="2" class="hour">12pm</td>
+            <td class="half-hour-prof" id="monday/1200"></td>
+            <td class="half-hour-prof" id="tuesday/1200"></td>
+            <td class="half-hour-prof" id="wednesday/1200"></td>
+            <td class="half-hour-prof" id="thursday/1200"></td>
+            <td class="half-hour-prof" id="friday/1200"></td>
+          </tr>
+          <tr> 
+            <td class="half-hour-prof" id="monday/1230"></td>
+            <td class="half-hour-prof" id="tuesday/1230"></td>
+            <td class="half-hour-prof" id="wednesday/1230"></td>
+            <td class="half-hour-prof" id="thursday/1230"></td>
+            <td class="half-hour-prof" id="friday/1230"></td>
+          </tr>
+          <tr> <!-- 1pm -->
+            <td rowspan="2" class="hour">1pm</td>
+            <td class="half-hour-prof" id="monday/1300"></td>
+            <td class="half-hour-prof" id="tuesday/1300"></td>
+            <td class="half-hour-prof" id="wednesday/1300"></td>
+            <td class="half-hour-prof" id="thursday/1300"></td>
+            <td class="half-hour-prof" id="friday/1300"></td>
+          </tr>
+          <tr>
+            <td class="half-hour-prof" id="monday/1330"></td>
+            <td class="half-hour-prof" id="tuesday/1330"></td>
+            <td class="half-hour-prof" id="wednesday/1330"></td>
+            <td class="half-hour-prof" id="thursday/1330"></td>
+            <td class="half-hour-prof" id="friday/1330"></td>
+          </tr>
+          <tr> <!-- 2pm -->
+            <td rowspan="2" class="hour">2pm</td>
+            <td class="half-hour-prof" id="monday/1400"></td>
+            <td class="half-hour-prof" id="tuesday/1400"></td>
+            <td class="half-hour-prof" id="wednesday/1400"></td>
+            <td class="half-hour-prof" id="thursday/1400"></td>
+            <td class="half-hour-prof" id="friday/1400"></td>
+          </tr>
+          <tr>
+            <td class="half-hour-prof" id="monday/1430"></td>
+            <td class="half-hour-prof" id="tuesday/1430"></td>
+            <td class="half-hour-prof" id="wednesday/1430"></td>
+            <td class="half-hour-prof" id="thursday/1430"></td>
+            <td class="half-hour-prof" id="friday/1430"></td>
+          </tr>
+          <tr> <!-- 3pm -->
+            <td rowspan="2" class="hour">3pm</td>
+            <td class="half-hour-prof" id="monday/1500"></td>
+            <td class="half-hour-prof" id="tuesday/1500"></td>
+            <td class="half-hour-prof" id="wednesday/1500"></td>
+            <td class="half-hour-prof" id="thursday/1500"></td>
+            <td class="half-hour-prof" id="friday/1500"></td>
+          </tr>
+          <tr>
+            <td class="half-hour-prof" id="monday/1530"></td>
+            <td class="half-hour-prof" id="tuesday/1530"></td>
+            <td class="half-hour-prof" id="wednesday/1530"></td>
+            <td class="half-hour-prof" id="thursday/1530"></td>
+            <td class="half-hour-prof" id="friday/1530"></td>
+          </tr>
+          <tr> <!-- 4pm -->
+            <td rowspan="2" class="hour">4pm</td>
+            <td class="half-hour-prof" id="monday/1600"></td>
+            <td class="half-hour-prof" id="tuesday/1600"></td>
+            <td class="half-hour-prof" id="wednesday/1600"></td>
+            <td class="half-hour-prof" id="thursday/1600"></td>
+            <td class="half-hour-prof" id="friday/1600"></td>
+          </tr>
+          <tr>
+            <td class="half-hour-prof" id="monday/1630"></td>
+            <td class="half-hour-prof" id="tuesday/1630"></td>
+            <td class="half-hour-prof" id="wednesday/1630"></td>
+            <td class="half-hour-prof" id="thursday/1630"></td>
+            <td class="half-hour-prof" id="friday/1630"></td>
+          </tr>
+          <tr> <!-- 5pm -->
+            <td rowspan="2" class="hour">5pm</td>
+            <td class="half-hour-prof" id="monday/1700"></td>
+            <td class="half-hour-prof" id="tuesday/1700"></td>
+            <td class="half-hour-prof" id="wednesday/1700"></td>
+            <td class="half-hour-prof" id="thursday/1700"></td>
+            <td class="half-hour-prof" id="friday/1700"></td>
+          </tr>
+          <tr>
+            <td class="half-hour-prof" id="monday/1730"></td>
+            <td class="half-hour-prof" id="tuesday/1730"></td>
+            <td class="half-hour-prof" id="wednesday/1730"></td>
+            <td class="half-hour-prof" id="thursday/1730"></td>
+            <td class="half-hour-prof" id="friday/1730"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

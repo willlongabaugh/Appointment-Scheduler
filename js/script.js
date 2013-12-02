@@ -27,6 +27,7 @@ $(document).ready(function() {
       .text('OK!').addClass('valid')
       .closest('.control-group').removeClass('danger').addClass('success');
     }
+
   });
 
   // PROFESSOR SELECTION///////////////////////////////
@@ -73,16 +74,19 @@ $(document).ready(function() {
     while(i <= 1730) {
     //for (var i = 700; i <= 1700; ) {
       if(i < 1000) {
-        timeSlotClass = '#'+day+'\\/0'+i;
+        timeSlotClass = '#'+day+'\/0'+i;
         iRef = '0'+ i;
       } else {
-        timeSlotClass = '#'+day+'\\/'+i;
+        timeSlotClass = '#'+day+'\/'+i;
         iRef = i;
       }
       //dataRef = new Firebase('https://cs390-appt-scheduler.firebaseio.com/professors/'+professor+'/'+day+'/'+iRef+'/available');
       dataRef = dayRef.child(iRef+'/available');
+    //alert(dataRef+" dataRef outside");
       dataRef.on('value', function(snapshot) {
+   
         state = snapshot.val();
+     alert(state +" " +timeSlotClass);
         if(state == 'Available') {
           $(timeSlotClass).addClass('success');
           $(timeSlotClass).text(state);
@@ -105,35 +109,7 @@ $(document).ready(function() {
 
     };
 
-    /*
-    //fill in half-hour slots
-    for (var i = 730; i <= 1730; i=i+100) {
-      if(i < 1000) {
-        timeSlotClass = '#'+day+'\\/0'+i;
-        iRef = '0'+ i;
-      } else {
-        timeSlotClass = '#'+day+'\\/'+i;
-        iRef = i;
-      }
-      dataRef = new Firebase('https://cs390-appt-scheduler.firebaseio.com/professors/'+professor+'/'+day+'/'+iRef+'/available');
-      
-      dataRef.on('value', function(snapshot) {
-        state = snapshot.val();
-        if(state == 'Available') {
-          $(timeSlotClass).addClass('success');
-          $(timeSlotClass).text(state);
-        } else if(state == 'Taken') {
-          nameRef = dayRef.child(iRef+'/name');
-          nameRef.on('value', function(param) {
-            $(timeSlotClass).addClass('danger');
-            $(timeSlotClass).text(param.val());
-          });
-          
-        }
-      });
-      
-    };
-    */
+    
 
   }
 
@@ -170,6 +146,10 @@ $(document).ready(function() {
       timeRef.child('available').set('Available');
       
     }
+
+
+
+    
 
     //Form buttons/////////////////////
     $('#submit-button').click(function() {

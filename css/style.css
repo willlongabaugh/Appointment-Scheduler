@@ -1,15 +1,33 @@
   html{
-  	background-color: #EFEFEB;
-  	font-family: Arial;
+ 
+    background-color:#310067;
+ 
+    font-family: Arial;
   }
   
   body{
-  	font-size: 14px;
+    background-color:#310067;
+    font-size: 14px;
   }
 
   label {
     visibility: hidden;
     
+  }
+  .hour{
+      background-color:#EFEDF4;
+  }
+  thead{
+      background: #ebe9f9; /* Old browsers */
+background: -moz-linear-gradient(top,  #ebe9f9 0%, #d8d0ef 55%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebe9f9), color-stop(55%,#d8d0ef)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ebe9f9 0%,#d8d0ef 55%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ebe9f9 0%,#d8d0ef 55%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ebe9f9 0%,#d8d0ef 55%); /* IE10+ */
+background: linear-gradient(to bottom,  #ebe9f9 0%,#d8d0ef 55%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebe9f9', endColorstr='#d8d0ef',GradientType=0 ); /* IE6-9 */
+
+      
   }
   label.valid {
     visibility: visible;
@@ -36,164 +54,169 @@
     border-radius: 4px;
   }
   select {
-  	width: 300px;
-  	height:40px;
-  	padding: 10px;
-  	border-style: none;
+    width: 300px;
+    height:40px;
+    padding: 10px;
+    border-style: none;
 
 
   }
 
   table {
-  	background-color: white;
-  	width: 960px;
-  	height: 900px;
-  	font-size: 12px;
-  	border-collapse: collapse;
-  	border-radius: 2px;
-  	padding: 0px;
+    background-color: white;
+    width: 960px;
+    height: 900px;
+    font-size: 12px;
+    border-collapse: collapse;
+    border-radius: 2px;
+    padding: 0px;
+    
 
 
   }
-
   th {
     width: 50px;
   }
   td {
-  	border: solid 1px #f2f2f2;
+    border: solid 1px #f2f2f2;
     height: 30px;
-  	padding: 0px;
+    padding: 0px;
   }
 
  .danger:hover, .warning:hover, .success:hover {
- 	cursor: pointer;
+  cursor: pointer;
  }
 
   
   #page-content {
-  	width: 960px;
-  	height: 1000px;
-  	margin: auto;
+    width: 960px;
+    height: 1000px;
+    margin: auto;
   }
   #dropdown-menu-container {
-  	width: 960px;
-  	height: 40px;
-  	margin-top: 30px;
-  	margin-bottom: 30px;
+    width: 960px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   #week-select-container {
-  	float: right;
-  	line-height: 40px;
-  	width: 230px;
-  	height: 40px;
-  	margin-bottom:30px;
-  	font-size: 0px;
+    float: right;
+    line-height: 40px;
+    width: 230px;
+    height: 40px;
+    margin-bottom:30px;
+    font-size: 0px;
   }
 
   .week-nav {
-  	text-align: center;
+    text-align: center;
 
-  	padding-top: 0px;
+    padding-top: 0px;
 
   }
   #week-name {
-  	height:40px;
-  	width: 150px;
-  	float:left;
-  	background-color: white;
-  	font-size: 12px;
+    height:40px;
+    width: 150px;
+    float:left;
+    background-color: white;
+    font-size: 12px;
   }
   #prev-week {
-  	width: 40px;
-  	height: 40px;
-  	float:left;
-  	background-color: white;
-  	border-top-left-radius: 2px;
-  	border-bottom-left-radius: 2px;
-  	font-size: 12px;
+    width: 40px;
+    height: 40px;
+    float:left;
+    background-color: white;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    font-size: 12px;
 
   }
   #next-week {
-  	width: 40px;
-  	height: 40px;
-  	float:left;
-  	background-color: white;
-  	border-top-right-radius: 2px;
-  	border-bottom-right-radius: 2px;
-  	font-size: 12px;
+    width: 40px;
+    height: 40px;
+    float:left;
+    background-color: white;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    font-size: 12px;
 
   }
 
   #calendar-container {
-  	width: 960px;
-  	height: 100%;
-  	font-size: 0;
+    width: 960px;
+    height: 100%;
+    font-size: 0;
 
 
   }
   .times-column {
-  	margin:0px;
-  	display: inline-block;
-  	background-color: white;
-  	width: 60px;
-  	height:690px;
-  	border-top-left-radius: 2px;
-  	border-bottom-left-radius: 2px;
-  	float:left;
-  	line-height: 30px;
+    margin:0px;
+    display: inline-block;
+    background-color: white;
+    width: 60px;
+    height:690px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    float:left;
+    line-height: 30px;
   }
   .hour {
-  	color: black;
-  	font-size: 12px;
-  	text-align: center;
-  	width: 60px;
-  	height: 60px;
-  	/*border: solid 1px #bdbdbd;*/
-  	border-radius: 2px;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    /*border: solid 1px #bdbdbd;*/
+    border-radius: 2px;
   }
   .day-column {
-  	margin:0px;
-  	display: inline-block;
-  	background-color: white;
-  	width: 180px;
-  	height: 690px;
-  	float:left;
-  	line-height: 30px;
-  	border-width: 0;
+    margin:0px;
+    display: inline-block;
+    background-color: white;
+    width: 180px;
+    height: 690px;
+    float:left;
+    line-height: 30px;
+    border-width: 0;
 
   }
-  .half-hour {
-  	color: black;
-  	font-size: 12px;
-  	/*text-align: center;*/
-  	/*width: 100%;*/
-  	height: 30px;
+  .half-hour, .half-hour-prof {
+    color: black;
+    font-size: 12px;
+    /*text-align: center;*/
+    /*width: 100%;*/
+    height: 30px;
 
-  	/*border: solid 1px #bdbdbd;*/
-  	border-radius: 2px;
+    /*border: solid 1px #bdbdbd;*/
+    border-radius: 2px;
 
   }
   
   .time-column-name {
-  	/*background-color: #944D94;
-  	color: white;*/
-  	font-size:12px;
-  	text-align: center;
-  	width: 60px;
-  	height:30px;
-  	
+    /*background-color: #944D94;
+    color: white;*/
+    font-size:12px;
+    text-align: center;
+    width: 60px;
+    height:30px;
+    
   }
   .day-column-name {
-  	/*background-color: #944D94;
-  	color: white;*/
-  	font-size:12px;
-  	/*text-align: center;*/
-  	width: 180px;
-  	height:30px;
-	  border-right: 1px solid white;
-  	
+    /*background-color: #944D94;
+    color: white;*/
+    font-size:12px;
+    /*text-align: center;*/
+    width: 180px;
+    height:30px;
+    border-right: 1px solid white;
+    
   }
-  
+  h3{
+      text-align: center;
+      color: white;
+      
+      
+  }
 
   #monday {
 
@@ -208,6 +231,6 @@
 
   }
   #friday{
-  	border-top-right-radius: 2px;
-  	border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
   }
