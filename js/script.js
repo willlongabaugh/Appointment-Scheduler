@@ -68,10 +68,11 @@ $(document).ready(function() {
     var timeSlotClass;
     var iRef;
     var state;
-
+    var done_indicator;
     //fill in hourly slots
     var i = 700;
     while(i <= 1730) {
+    alert(state +" " +timeSlotClass);
     //for (var i = 700; i <= 1700; ) {
       if(i < 1000) {
         timeSlotClass = '#'+day+'\/0'+i;
@@ -82,11 +83,14 @@ $(document).ready(function() {
       }
       //dataRef = new Firebase('https://cs390-appt-scheduler.firebaseio.com/professors/'+professor+'/'+day+'/'+iRef+'/available');
       dataRef = dayRef.child(iRef+'/available');
+
     //alert(dataRef+" dataRef outside");
+      done_indicator = "Start. ";
       dataRef.on('value', function(snapshot) {
-   
+        done_indicator += "Inside. ";
         state = snapshot.val();
-     alert(state +" " +timeSlotClass);
+        alert(state +" " +timeSlotClass);
+        done_indicator += "Two steps. ";
         if(state == 'Available') {
           $(timeSlotClass).addClass('success');
           $(timeSlotClass).text(state);
@@ -98,8 +102,13 @@ $(document).ready(function() {
           });
           
         }
+        done_indicator += "The end. ";
       });
-
+      dataRef.set(dataRef.val(),  function(q) {
+        alert('set completed');
+      });
+      alert(done_indicator);
+      //alert("last");
       //increment the time
       if(i%100 == 30) { 
         i += 70;
