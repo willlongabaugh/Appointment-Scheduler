@@ -69,34 +69,35 @@ $(document).ready(function() {
     var iRef;
     var state;
     var done_indicator;
+    var FooToBe;
     //fill in hourly slots
     var i = 700;
     while(i <= 1730) {
-    alert(state +" " +timeSlotClass);
+    console.log(state +" " +timeSlotClass);
     //for (var i = 700; i <= 1700; ) {
       if(i < 1000) {
-        timeSlotClass = '#'+day+'\/0'+i;
+        timeSlotClass = '#'+day+'\\/0'+i;
         iRef = '0'+ i;
       } else {
-        timeSlotClass = '#'+day+'\/'+i;
+        timeSlotClass = '#'+day+'\\/'+i;
         iRef = i;
       }
       //dataRef = new Firebase('https://cs390-appt-scheduler.firebaseio.com/professors/'+professor+'/'+day+'/'+iRef+'/available');
       dataRef = dayRef.child(iRef+'/available');
 
-    //alert(dataRef+" dataRef outside");
+    //console.log(dataRef+" dataRef outside");
       done_indicator = "Start. ";
       dataRef.on('value', function(snapshot) {
         done_indicator += "Inside. ";
         state = snapshot.val();
-        alert(state +" " +timeSlotClass);
+        console.log(state +" " +timeSlotClass);
         done_indicator += "Two steps. ";
         if(state == 'Available') {
           $(timeSlotClass).addClass('success');
           $(timeSlotClass).text(state);
         } else if(state == 'Taken') {
-          nameRef = dayRef.child(iRef+'/name');
-          nameRef.on('value', function(param) {
+             nameRef = dayRef.child(iRef+'/name');
+            nameRef.on('value', function(param) {
             $(timeSlotClass).addClass('danger');
             $(timeSlotClass).text(param.val());
           });
@@ -104,11 +105,22 @@ $(document).ready(function() {
         }
         done_indicator += "The end. ";
       });
-      dataRef.set(dataRef.val(),  function(q) {
-        alert('set completed');
-      });
-      alert(done_indicator);
-      //alert("last");
+
+
+      dataRef.on('value', function(param) {
+           FooToBe=param.val();
+           dataRef.set(FooToBe.substr(0, length-1));
+          console.log("FooToBe");
+          });
+      
+      dataRef.set(FooToBe+"*");
+      /*/*
+
+      dataRef.set(FooToBe,  function(q) {
+        console.log('set back completed');
+      });*/
+      console.log(done_indicator);
+      //console.log("last");
       //increment the time
       if(i%100 == 30) { 
         i += 70;
@@ -170,7 +182,7 @@ $(document).ready(function() {
         email  = $('#email').val();
         reason = $('#reason').val();
         id     = currentTime.attr('id');
-        //alert('id is ' + id);
+        //console.log('id is ' + id);
 
         $(currentTime).addClass('danger');
         $(currentTime).removeClass('success');
