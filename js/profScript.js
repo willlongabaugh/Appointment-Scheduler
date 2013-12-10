@@ -74,6 +74,7 @@ var currentTimeP;
    $('.half-hour-prof').click(function() {
     currentTimeP = $(this);
     id = currentTimeP.attr('id'); //todo V
+    
     timeRef2 = new Firebase('https://cs390-appt-scheduler.firebaseio.com/professors/'+professor+'/'+id);
     
     //cancelling an availability slot, hence making it unavailable///////////////
