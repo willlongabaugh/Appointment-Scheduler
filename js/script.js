@@ -69,16 +69,17 @@ $(document).ready(function() {
     dayRef.on("child_added", function(snapshot) {
       console.log('inside');  
       if(snapshot.hasChildren()) {
-      //fill in hourly slots
         snapshot.forEach(function(childsnapshot) {
           timeSlotClass = day + '\\/' + snapshot.name();
           console.log(timeSlotClass);
           console.log(childsnapshot.val());
+          console.log(childsnapshot.child('name').val());
           console.log(childsnapshot.hasChild('available'));
           console.log(childsnapshot.child('available').val());
           if(childsnapshot.val() == 'Available') {
             console.log('available yes');
             $('#'+timeSlotClass).addClass('success');
+            $('#'+timeSlotClass).text('Available');
           }
            else if(childsnapshot.val() == 'Taken') {
             console.log('available no');

@@ -1,114 +1,124 @@
 $(document).ready(function() {
   var professor;
 
-      professor = "sfkaplan";       //TODO; get this info
+      professor = "ccmcgeoch";       //TODO; get this info
       fillDay(professor,"monday");
       fillDay(professor,"tuesday");
       fillDay(professor,"wednesday");
       fillDay(professor,"thursday");
       fillDay(professor,"friday");
-    
 
-  
+
+
 
   //retrive data from Firebase for a specific day
   function fillDay(professor, day) {
     var dayRef = new Firebase('https://cs390-appt-scheduler.firebaseio.com/professors/'+professor+'/'+day);
-    var dataRef;
-    var nameRef;
-    var timeSlotClass;
-    var iRef;
-    var state;
-
-    //fill in hourly slots
-    var i = 700;
-    while(i <= 1730) {
-    //for (var i = 700; i <= 1700; ) {
-      if(i < 1000) {
-        timeSlotClass = document.getElementByID//'#'+day+'\/0'+i;
-        iRef = '0'+ i;
-      } else {
-        timeSlotClass = '#'+day+'\/'+i;
-        iRef = i;
-      }
-      //dataRef = new Firebase('https://cs390-appt-scheduler.firebaseio.com/professors/'+professor+'/'+day+'/'+iRef+'/available');
-      dataRef = dayRef.child(iRef+'/available');
-    //alert(dataRef+" dataRef outside");
-      dataRef.on('value', function(snapshot) {
-   
-        state = snapshot.val();
-    // alert(state +" " +timeSlotClass);
-        if(state == 'Available') {
-          $(timeSlotClass).addClass('success');
-          $(timeSlotClass).text(state);
-        } else if(state == 'Taken') {
-          nameRef = dayRef.child(iRef+'/name');
-          nameRef.on('value', function(param) {
-            $(timeSlotClass).addClass('danger');
-            $(timeSlotClass).text(param.val());
-          });
-          
-        }
-      });
-
-      //increment the time
-      if(i%100 == 30) { 
-        i += 70;
-      } else if(i%100 == 0) {
-        i+= 30;
-      }
-
-    };
-
     
+    var timeSlotClass;
+    
+    console.log('outside');
+    dayRef.on("child_added", function(snapshot) {
+      console.log('inside');  
+      if(snapshot.hasChildren()) {
+        snapshot.forEach(function(childsnapshot) {
+          timeSlotClass = day + '\\/' + snapshot.name();
+          /*
+          console.log(timeSlotClass);
+          console.log(childsnapshot.val());
+          console.log(childsnapshot.child('name').val());
+          console.log(childsnapshot.hasChild('available'));
+          console.log(childsnapshot.child('available').val());
+          */
 
+          if(childsnapshot.val() == 'Available') {
+            console.log('available yes');
+            $('#'+timeSlotClass).addClass('success');
+            $('#'+timeSlotClass).text('Available');
+          }
+          else if(childsnapshot.val() == 'Taken') {
+            console.log('available no');
+            $('#'+timeSlotClass).addClass('danger');
+            $('#'+timeSlotClass).text(snapshot.child('name').val());
+          }
+        });
+      }
+    });
   }
 
 
   
 
-var currentTimeP;
- 
- var timeRef2;
+  var currentTimeP;
 
-   $('.half-hour-prof').click(function() {
+  var profRef;
+  var timeRef;
+  var time;
+  var day;
+
+  // for Professors clicking on a time slot
+  $('.half-hour-prof').click(function() {
     currentTimeP = $(this);
     id = currentTimeP.attr('id'); //todo V
-    
-    timeRef2 = new Firebase('https://cs390-appt-scheduler.firebaseio.com/professors/'+professor+'/'+id);
-    
-    //cancelling an availability slot, hence making it unavailable///////////////
-    if(currentTimeP.hasClass('success')) {
-       $(currentTimeP).removeClass('success');
-      $(currentTimeP).empty();
-      //SEND EMAIL TO PROFESSOR?
 
-      //UPDATE FIREBASE DATA
-     
-      timeRef2.child('available').set('Unavailable');     
-      //$("#submit-form-container").modal('show');
-    }
     
-    //making an appointment////////////////
-    else if(currentTimeP.hasClass('danger')) {
+    profRef = new Firebase('https://cs390-appt-scheduler.firebaseio.com/professors/'+professor);
+    timeRef = new Firebase('https://cs390-appt-scheduler.firebaseio.com/professors/'+professor+'/'+id);
+    time = id.substr(id.length-4, id.length);
+    day  = id.substr(0, id.length-4);
+
+    //making an appointment from an empty slot////////////////
+    if(!currentTimeP.hasClass('danger') && !currentTimeP.hasClass('success')) {
+      currentTimeP.addClass('success');
+      currentTimeP.text('Available');
+      profRef.child(day).child(time).set({available : 'Available', name : '--', email : '--', reason : '--'});
+      
+    }
+    //cancelling a slot, regardless if taken or available
+    else {
+      //clears html table cell
+      currentTimeP.empty();
+      currentTimeP.removeClass('success');
+      currentTimeP.removeClass('danger');
+
+      //sets a value for the time slot, which wipes out any child data
+      profRef.child(day).child(time).set('--');
+      
+    }
+
+    /*
+    if(currentTimeP.hasClass('danger')) {
       $(currentTimeP).removeClass('danger');
       $(currentTimeP).addClass('success');
       $(currentTimeP).text('Available');
       //SEND EMAIL TO PROFESSOR?
-
+  
       //UPDATE FIREBASE DATA
-     
-      timeRef2.child('available').set('Available');    
+
+      timeRef.child('available').set('Available');    
       
+      /*
     }
     else{
       $(currentTimeP).addClass('success');
       $(currentTimeP).text('Available');
 
-      timeRef2.child('available').set('Available');     
+      timeRef.child('available').set('Available');     
 
     }
-  
+
+    //cancelling an availability slot, hence making it unavailable///////////////
+    if(currentTimeP.hasClass('success')) {
+     $(currentTimeP).removeClass('success');
+     $(currentTimeP).empty();
+      //SEND EMAIL TO PROFESSOR?
+
+      //UPDATE FIREBASE DATA
+
+      timeRef.child('available').set('Unavailable');  
+    }
+    */
+
   });
 
 
