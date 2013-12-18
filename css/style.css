@@ -191,6 +191,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebe9f9', end
     border-radius: 2px;
 
   }
+
+  .half-hour-prof, td {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
   
   .time-column-name {
     /*background-color: #944D94;
@@ -234,3 +243,67 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebe9f9', end
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
   }
+  .loginbox{
+  background:#EFEDF4;
+     color:black;
+  position: relative;
+    width: 300px;
+    height: 275px;
+     margin: 0 auto;
+    cursor: default;
+	padding: 10px 15px;
+  }
+ .loginbox input[type=text],
+.loginbox input[type=password],
+.loginbox input[type=button] {
+    line-height: 14px;
+    margin: 20px 0;
+    padding: 6px 15px;
+    border: 0;
+    outline: none;
+ 
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 0px 1px 1px rgba(255,255,255, .2);
+ 
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+   
+}
+.loginbox input[type=submit]{
+margin:auto 100px;
+}
+
+.loginbox label {
+	color:black;
+	visibility:visible;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+.title{
+margin:auto 0;
+text-align:center;
+
+font-size:58px;
+}
+.homebody{
+margin: auto 0;
+width:75%;
+float: left;
+color:white;
+}
+.homebody ul li h1 a{
+font-size: 64px;
+color: white;
+margin: auto 0;
+}
+.homebody ul li{
+display: inline;
+list-style-type: none;
+float:right;
+padding:20px;
+}
