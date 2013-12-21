@@ -1,13 +1,8 @@
 $(document).ready(function() {
   var professor;
-<<<<<<< HEAD
 	professor = window.location.search.replace(/^\?/, '');
 		
       //professor = "ccmcgeoch";       //TODO; get this info
-=======
-
-      professor = "ccmcgeoch";       //TODO; get this info
->>>>>>> 7f33afa032aa988cb330c944c17c16412813ab51
       fillDay(professor,"monday");
       fillDay(professor,"tuesday");
       fillDay(professor,"wednesday");
